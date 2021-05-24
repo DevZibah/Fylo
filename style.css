@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* Variables */
+:root {
+    /* primary */
+    --background-color-intro: hsl(217, 28%, 15%);
+    --background-color-main: hsl(218, 28%, 13%);
+    --background-color-footer: hsl(216, 53%, 9%);
+    --background-color-testimonial: hsl(219, 30%, 18%);
+
+    /* neutral */
+    --white: hsl(0, 0%, 100%);
+}
+
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+.cc-container {
+    /* border: 1px solid red; */
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    font-size: 14px;
+    background-color: var(--background-color-intro);
+    color: var(--white);
+}
+
+main {
+    background-color: var(--background-color-main);
+}
+
+footer {
+    background-color: var(--background-color-footer)
+}
+
+a {
+    color: var(--white);
+}
+
+.cc-logo {
+    width: 50%;
+}
+
+header {
+    height: fit-content;
+    background-image: url('./images/bg-curvy-mobile.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* .cc-hero article{
+      background-color: var(--background-color-main);
+} */
+
+.cc-link {
+    border-bottom: 1px solid #05c2c9;
+}
+
+.card{
+    width: 90%;
+}
+
+.card,
+.cc-form {
+    background-color: var(--background-color-testimonial);
+}
+
+.cc-form {
+    border-radius: 10px;
+    transform: translateY(15rem);
+}
+
+.cc-form button{
+    width: 20rem;
+}
+
+.cc-p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.cc-avatar img {
+    width: 15%;
+}
+
+.quote {
+    width: 10%;
+}
+
+li{
+    margin: 0 0 1rem 0;
+}
+
+
+
+/* Small devices (landscape phones) */
+
+@media (min-width: 276px) {}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    /* .cc-lead{
+        font-size
+    } */
+
+    header {
+        height: 80rem;
+        background-image: url('./images/bg-curvy-desktop.svg');
+       
+    }
+
+
+    .cc-hero article {
+        width: 52%;
+    }
+
+    .card {
+        width: 30%;
+    }
+
+    .cc-form {
+        border-radius: 10px;
+        width: 50%;
+    }
+
+    .quote{
+        width: 5%;
+    }
+
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops) */
+
+@media (min-width: 1200px) {}
